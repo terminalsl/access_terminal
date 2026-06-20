@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TIU // Secure Access</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main class="masthead">
+  <svg class="seal" viewBox="0 0 52 52">
+    <circle cx="26" cy="26" r="22" />
+    <circle cx="26" cy="26" r="15" />
+    <path d="M26 11 L33 26 L26 41 L19 26 Z" />
+    <circle class="seal-core" cx="26" cy="26" r="3" />
+  </svg>
+  <h1>Twin Pines Incident Unit</h1>
+  <div class="division">Enhanced Asset Division — Secure Terminal</div>
+</main>
+
+<div class="boot-log" id="bootLog"></div>
+
+<form class="access-card" id="accessForm" autocomplete="off">
+  <label for="accessCode">Access Code</label>
+  <div class="access-row">
+    <input
+      type="password"
+      id="accessCode"
+      name="accessCode"
+      placeholder="••••••••••••"
+      required
+    />
+    <button type="submit" id="accessSubmit">Authenticate</button>
+  </div>
+  <div class="status-line" id="statusLine">STATUS: AWAITING INPUT</div>
+</form>
+
+<div class="footnote">TIU-NET // UNAUTHORIZED ACCESS IS A VIOLATION OF DIRECTIVE 4-C</div>
+
+<script src="terminal.js"></script>
+</body>
+</html>
